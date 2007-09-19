@@ -1,0 +1,4 @@
+= French Dates
+
+provides a tag <r:frenchdate> that behaves like the <r:date> but giving french
+names for months, days, etc...
