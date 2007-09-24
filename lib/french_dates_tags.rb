@@ -19,7 +19,7 @@ module FrenchDatesTags
   include Radiant::Taggable
 
   desc %{
-    Affiche la date en français.
+    Affiche la date en franÃ§ais.
   }
   tag 'french_date' do |tag|
     page = tag.locals.page
@@ -41,7 +41,7 @@ module FrenchDatesTags
   end
 
   desc %{
-    Affiche la date en français
+    Affiche la date en franÃ§ais
   }
   tag 'comment:french_date' do |tag|
     comment = tag.locals.comment
