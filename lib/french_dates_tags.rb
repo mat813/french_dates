@@ -28,7 +28,7 @@ module FrenchDatesTags
     date = if time_attr
 	     case
 	     when time_attr == 'now'
-	       FrenchDateTime.now
+	       DateTime.now
 	     when ['published_at', 'created_at', 'updated_at'].include?(time_attr)
 	       page[time_attr].to_datetime
 	     else
