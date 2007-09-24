@@ -39,4 +39,14 @@ module FrenchDatesTags
 	   end
     date.strftime(format)
   end
+
+  desc %{
+    Affiche la date en français
+  }
+  tag 'comment:french_date' do |tag|
+    comment = tag.locals.comment
+    format = (tag.attr['format'] || '%A %e %B %Y')
+    date = comment.created_at.to_datetime
+    date.strftime(format)
+  end
 end
