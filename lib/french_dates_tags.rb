@@ -18,6 +18,9 @@ end
 module FrenchDatesTags
   include Radiant::Taggable
 
+  desc %{
+    Affiche la date en français.
+  }
   tag 'french_date' do |tag|
     page = tag.locals.page
     format = (tag.attr['format'] || '%A, %B %d, %Y')
