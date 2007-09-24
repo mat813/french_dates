@@ -23,7 +23,7 @@ module FrenchDatesTags
   }
   tag 'french_date' do |tag|
     page = tag.locals.page
-    format = (tag.attr['format'] || '%A, %B %d, %Y')
+    format = (tag.attr['format'] || '%A %e %B %Y')
     time_attr = tag.attr['for']
     date = if time_attr
 	     case
